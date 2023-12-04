@@ -30,7 +30,6 @@ defmodule LiveCursorsWeb.Endpoint do
     plug Phoenix.CodeReloader
   end
 
-
   plug Plug.RequestId
   plug Plug.Telemetry, event_prefix: [:phoenix, :endpoint]
 

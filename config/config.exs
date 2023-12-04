@@ -9,6 +9,7 @@ import Config
 
 # Configures the endpoint
 config :live_cursors, LiveCursorsWeb.Endpoint,
+  adapter: Bandit.PhoenixAdapter,
   url: [host: "localhost"],
   render_errors: [view: LiveCursorsWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: LiveCursors.PubSub,
